@@ -1,0 +1,21 @@
+#define  _CRT_SECURE_NO_WARNINGS	
+#include<stdio.h>
+int main()
+{
+	int i = 1000;
+	printf("The year is ");
+	for (; i < 2001; i++)
+	{
+
+		if (0 == i % 4 && 0 != i % 100)
+		{
+			
+			printf("%d ",i);
+		}
+
+
+	}
+
+
+
+}
