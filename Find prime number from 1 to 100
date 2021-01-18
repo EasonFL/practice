@@ -1,0 +1,20 @@
+#define  _CRT_SECURE_NO_WARNINGS	
+#include<stdio.h>
+int main()
+{
+	int j = 2;
+	for (;j<101;j++)
+	{
+		int i = 2;
+		for (; i < j; i++)
+		{
+			if (0 == j%i)
+				break;
+         }
+		if (i == j)
+			printf("%d ",i);
+	
+	
+	}
+
+}
