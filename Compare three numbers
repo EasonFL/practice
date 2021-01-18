@@ -1,0 +1,27 @@
+#define  _CRT_SECURE_NO_WARNINGS	
+#include<stdio.h>
+int main()
+{
+	int num[3] = { 0 };
+	int i = 0;
+	printf("Please input three numbers  ");
+	scanf("%d%d%d",&num[0],&num[1],&num[2]);
+	for (; i < 2; i++)
+	{
+		int j = 0;
+		for (;j<2-i;j++)
+		if (num[j] < num[j + 1])
+		{
+			int X;
+			X = num[j];
+			num[j] = num[j + 1];
+			num[j + 1] = X;
+		}
+
+	}
+	printf("The adjusted number is ");
+	for (i=0; i < 3; i++)
+	{
+		printf("%d ",num[i]);
+	}
+}
